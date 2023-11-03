@@ -1,0 +1,9 @@
+.gradle/
+.classpath
+.settings/
+.project
+Makefile
+bin/
+gradle/
+gradlew
+libs/
