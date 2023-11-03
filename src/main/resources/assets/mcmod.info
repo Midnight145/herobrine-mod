@@ -1,0 +1,16 @@
+[
+	{
+	  "modid": "herobrine",
+	  "name": "Herobrine",
+	  "description": "It's time...",
+	  "version": "${version}",
+	  "mcversion": "${mcversion}",
+	  "url": "",
+	  "updateUrl": "",
+	  "authorList": [""],
+	  "credits": "",
+	  "logoFile": "",
+	  "screenshots": [],
+	  "dependencies": []
+	}
+]

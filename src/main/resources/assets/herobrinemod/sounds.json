@@ -1,0 +1,20 @@
+{
+  "itsherobrine": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "records/itsherobrine",
+        "stream": true
+      }
+    ]
+  },
+  "seeherobrine": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "records/seeherobrine",
+        "stream": true
+      }
+    ]
+  }
+ }

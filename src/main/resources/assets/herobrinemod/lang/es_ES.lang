@@ -1,0 +1,20 @@
+tile.totem.name=Tótem de Herobrine
+item.itsherobrine.name=It's Herobrine
+item.seeherobrine.name=Have you seen the Herobrine
+item.record.herobrinemod:records.seeherobrine.desc=gothtigger92 - Have you seen the Herobrine
+item.record.itsherobrine.desc=BlahBlahBlahGAMING - It's Herobrine
+entity.Herobrine.name=Herobrine
+entity.Herobrine Stalker.name=Herobrine Acosador
+entity.Herobrine Builder.name=Herobrine Constructor
+entity.Herobrinezombie.name=Zombie
+entity.HerobrineSlave.name=Esclavo de Herobrine
+entity.Notch.name=Notch
+entity.HGhost.name=Herobrine
+entity.ChuckNorris.name=Chuck Norris
+entity.Cowbrine.name=VacaBrine
+entity.HDummy.name=Herobrine
+entity.HerobrineBoss.name=Jefe Herobrine
+entity.Jetra.name=Jetra de Plannet Minecraft
+
+entity.Evilchicken.name=Pollo Malévolo
+entity.Pigbrine.name=CerdoBrine

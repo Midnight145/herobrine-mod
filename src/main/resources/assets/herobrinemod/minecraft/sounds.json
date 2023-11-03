@@ -1,0 +1,11 @@
+{
+  "records.itsherobrine": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "itsherobrine.ogg",
+        "stream": true
+      }
+    ]
+  }
+ }
