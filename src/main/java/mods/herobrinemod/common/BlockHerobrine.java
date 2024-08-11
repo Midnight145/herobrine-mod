@@ -38,7 +38,8 @@ public class BlockHerobrine extends Block {
 
         GameRegistry.registerBlock(
             this,
-            this.getUnlocalizedName().substring(5));
+            this.getUnlocalizedName()
+                .substring(5));
         GameRegistry.addRecipe(new ItemStack(this, 1), "###", "#X#", "###", 'X', Blocks.soul_sand, '#', Items.bone);
     }
 
