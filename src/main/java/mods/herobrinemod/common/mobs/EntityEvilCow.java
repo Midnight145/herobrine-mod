@@ -1,39 +1,44 @@
 
 package mods.herobrinemod.common.mobs;
 
-import mods.herobrinemod.common.Config;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 
+import mods.herobrinemod.common.Config;
+
 public class EntityEvilCow extends EntityEvilMobBase {
-	public EntityEvilCow(World world) {
-		super(world, .9f, 1.3f);
-	}
 
-	public EntityEvilCow(World world, double x, double y, double z) {
-		this(world);
-		this.setPosition(x, y + this.yOffset, z);
-	}
+    public EntityEvilCow(World world) {
+        super(world, .9f, 1.3f);
+    }
 
-	@Override
-	protected void applyEntityAttributes() {
-		super.applyEntityAttributes();
-		this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setBaseValue(4.0D);
-	}
+    public EntityEvilCow(World world, double x, double y, double z) {
+        this(world);
+        this.setPosition(x, y + this.yOffset, z);
+    }
 
-	@Override
-	public void setDead() {
-		super.setDead();
-		if (!this.worldObj.isRemote) { return; }
+    @Override
+    protected void applyEntityAttributes() {
+        super.applyEntityAttributes();
+        this.getEntityAttribute(SharedMonsterAttributes.attackDamage)
+            .setBaseValue(4.0D);
+    }
 
-		if (Config.spawnEvilMobs && Config.placeLava) {
+    @Override
+    public void setDead() {
+        super.setDead();
+        if (!this.worldObj.isRemote) {
+            return;
+        }
 
-			this.worldObj.setBlock((int) this.posX, (int) this.posY, (int) this.posZ, Blocks.lava, 0, 0);
-			this.worldObj.setBlock((int) this.posX, (int) this.posY + 1, (int) this.posZ, Blocks.lava, 0, 0);
-			this.worldObj.markBlockForUpdate((int) this.posX, (int) this.posY, (int) this.posZ);
-			this.worldObj.markBlockForUpdate((int) this.posX, (int) this.posY + 1, (int) this.posZ);
-		}
-	}
+        if (Config.spawnEvilMobs && Config.placeLava) {
+
+            this.worldObj.setBlock((int) this.posX, (int) this.posY, (int) this.posZ, Blocks.lava, 0, 0);
+            this.worldObj.setBlock((int) this.posX, (int) this.posY + 1, (int) this.posZ, Blocks.lava, 0, 0);
+            this.worldObj.markBlockForUpdate((int) this.posX, (int) this.posY, (int) this.posZ);
+            this.worldObj.markBlockForUpdate((int) this.posX, (int) this.posY + 1, (int) this.posZ);
+        }
+    }
 
 }

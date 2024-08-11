@@ -1,9 +1,10 @@
 package mods.herobrinemod.common.mobs;
 
-import mods.herobrinemod.common.Config;
 import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.entity.monster.IMob;
 import net.minecraft.world.World;
+
+import mods.herobrinemod.common.Config;
 
 public class EntityEvilMobBase extends EntityMob implements IMob {
 

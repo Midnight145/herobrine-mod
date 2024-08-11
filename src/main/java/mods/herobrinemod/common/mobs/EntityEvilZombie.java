@@ -1,9 +1,10 @@
 package mods.herobrinemod.common.mobs;
 
-import mods.herobrinemod.common.Config;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.monster.EntityZombie;
 import net.minecraft.world.World;
+
+import mods.herobrinemod.common.Config;
 
 public class EntityEvilZombie extends EntityZombie {
 
@@ -15,17 +16,20 @@ public class EntityEvilZombie extends EntityZombie {
         this.isImmuneToFire = true;
     }
 
-	public EntityEvilZombie(World world, double x, double y, double z) {
-		this(world);
-		this.setPosition(x, y + this.yOffset, z);
-	}
-
-	@Override
-	protected void applyEntityAttributes() {
-		super.applyEntityAttributes();
-		this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(0.15D);
-	}
+    public EntityEvilZombie(World world, double x, double y, double z) {
+        this(world);
+        this.setPosition(x, y + this.yOffset, z);
+    }
 
     @Override
-    public int getTotalArmorValue() { return 2; }
+    protected void applyEntityAttributes() {
+        super.applyEntityAttributes();
+        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed)
+            .setBaseValue(0.15D);
+    }
+
+    @Override
+    public int getTotalArmorValue() {
+        return 2;
+    }
 }

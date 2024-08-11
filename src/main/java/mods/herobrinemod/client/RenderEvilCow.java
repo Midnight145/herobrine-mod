@@ -10,18 +10,23 @@ import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
 
 // Referenced classes of package net.minecraft.src:
-//            RenderLiving, EntityCow, ModelBase, EntityLiving,
-//            Entity
+// RenderLiving, EntityCow, ModelBase, EntityLiving,
+// Entity
 
 public class RenderEvilCow extends RenderLiving {
-	private static final ResourceLocation texture = new ResourceLocation("herobrinemod", "textures/mob/cowbrine.png");
 
-	public RenderEvilCow(ModelBase par1ModelBase, float par2) { super(par1ModelBase, par2); }
+    private static final ResourceLocation texture = new ResourceLocation("herobrinemod", "textures/mob/cowbrine.png");
 
-	/**
-	 * Returns the location of an entity's texture. Doesn't seem to be called unless
-	 * you call Render.bindEntityTexture.
-	 */
-	@Override
-	protected ResourceLocation getEntityTexture(Entity par1Entity) { return texture; }
+    public RenderEvilCow(ModelBase par1ModelBase, float par2) {
+        super(par1ModelBase, par2);
+    }
+
+    /**
+     * Returns the location of an entity's texture. Doesn't seem to be called unless
+     * you call Render.bindEntityTexture.
+     */
+    @Override
+    protected ResourceLocation getEntityTexture(Entity par1Entity) {
+        return texture;
+    }
 }

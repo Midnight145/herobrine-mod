@@ -2,24 +2,26 @@ package mods.herobrinemod.common;
 
 import java.util.List;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemRecord;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+
 public class ItemHDisc extends ItemRecord {
-	public String rname;
-	public String screename;
 
-	protected ItemHDisc(String name, String screenname) {
-		super(name);
+    public String rname;
+    public String screename;
 
-		this.screename = screenname;
-		this.rname = name;
+    protected ItemHDisc(String name, String screenname) {
+        super(name);
 
-	}
+        this.screename = screenname;
+        this.rname = name;
+
+    }
 
     @SuppressWarnings("unchecked")
     @SideOnly(Side.CLIENT)
@@ -28,14 +30,16 @@ public class ItemHDisc extends ItemRecord {
         par3List.add(getRecordNameLocal());
     }
 
-	@SideOnly(Side.CLIENT)
+    @SideOnly(Side.CLIENT)
     @Override
-	public String getRecordNameLocal() {
+    public String getRecordNameLocal() {
 
-		return this.screename;
-	}
+        return this.screename;
+    }
 
     @Override
-	public ResourceLocation getRecordResource(String name) { return new ResourceLocation("herobrinemod:" + rname); }
+    public ResourceLocation getRecordResource(String name) {
+        return new ResourceLocation("herobrinemod:" + rname);
+    }
 
 }
