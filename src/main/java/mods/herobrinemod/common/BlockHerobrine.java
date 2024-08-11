@@ -37,9 +37,8 @@ public class BlockHerobrine extends Block {
         this.setBlockTextureName("herobrinemod:blockskin1");
 
         GameRegistry.registerBlock(
-            HerobrineMod.totem,
-            HerobrineMod.totem.getUnlocalizedName()
-                .substring(5));
+            this,
+            this.getUnlocalizedName().substring(5));
         GameRegistry.addRecipe(new ItemStack(this, 1), "###", "#X#", "###", 'X', Blocks.soul_sand, '#', Items.bone);
     }
 
